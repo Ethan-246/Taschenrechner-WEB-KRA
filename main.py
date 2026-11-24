@@ -1,6 +1,12 @@
 def addieren(a, b):
     return a + b
 
+def multiplication (a,b):
+    return a * b 
+
+def Division (a,b):
+    return a / b
+
 def main():
     print("Taschenrechner")
     print("1 fuer Addition")
@@ -10,16 +16,17 @@ def main():
 
     wahl = input("Wahl eingeben: ")
 
+    Zahl1 = float(input("Bitte Zahl 1 eingeben:"))
+    Zahl2 = float(input("Bitte Zahl 2 eingeben:"))
     match wahl:
         case "1":
-            print("Resultat: {}".format(addieren(2,3)))
-            # Hier Funktion für Addition einfügen
+            print("Resultat: {}".format(addieren(Zahl1,Zahl2)))
         case "2":
-            # Hier Funktion für die Subtraktion einfügen
+            print("test")
         case "3":
-            # Hier die Funktion für die Multiplikation einfügen
+            print("Resultat: {}".format(multiplication(Zahl1,Zahl2)))
         case "4":
-            # Hier die Funktion für die Division einfügen
+             print("Resultat: {}".format(Division(Zahl1,Zahl2)))
         case _:
             print("Falsche Auswahl, das Programm wird beendet.")
 
